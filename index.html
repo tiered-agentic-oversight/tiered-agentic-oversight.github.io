@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making">
+  <meta name="keywords" content="MDAgents, Medical Decision Making, Multi-LLM Collaboration">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/bed-svgrepo-com.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ybkim95.github.io/">Yubin Kim</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://chanwoo-park-official.github.io/">Chanwoo Park</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/hyewon-jeong/">Hyewon Jeong</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://futuretech.mit.edu/team/yik-siu-chan">Yik Siu Chan</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://orsonxu.com/">Xuhai Xu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ&hl=en">Daniel McDuff</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.kr/citations?user=Fu3Z-KcAAAAJ&hl=ko">Hyeonhoon Lee</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.csail.mit.edu/person/marzyeh-ghassemi">Marzyeh Ghassemi</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.media.mit.edu/people/cynthiab/overview/">Cynthia Breazeal</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.media.mit.edu/people/haewon/overview/">Hae Won Park</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Massachusetts Institute of Technology</span>
+            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>3</sup>Seoul National University Hospital</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/mitmedialab/MDAgents/blob/main/pdf/paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.15155"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/mitmedialab/MDAgents"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="demo.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Demo</span>
+                </a>
+            </span>
+            </div>
+            <div class="is-size-5 publication-news">
+              <br>
+              <p>
+                🎉 <strong>News:</strong> Our paper has been accepted as an <strong>oral paper</strong> at NeurIPS 2024!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!--video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/mainfigure.png" type="picture">
+      </video-->
+      <img src="./static/images/mdagents_animation.gif" width="100%" alt="Main Figure AgentClinic">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">MDAgents</span> is a framework that adapts the collaboration of LLMs for complex medical decision-making, improving performance on major medical benchmarks.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Foundation models are becoming valuable tools in medicine. Yet despite their promise, the best way to leverage Large Language Models (LLMs) in complex medical tasks remains an open question. We introduce a novel multi-actor framework, named <span style="font-weight: bold;">MDAgents</span> that helps to address this gap by automatically assigning a collaboration structure to a team of LLMs. The assigned solo or group collaboration structure is tailored to the medical task at hand, a simple emulation inspired by the way real-world medical decision-making processes are adapted to tasks of different complexities. We evaluate our framework and baseline methods using state-of-the-art LLMs across a suite of real-world medical knowledge and clinical diagnosis benchmarks. MDAgents achieved the best performance in <strong>seven out of ten</strong> benchmarks on tasks requiring an understanding of medical knowledge and multi-modal reasoning, showing a significant improvement of up to 4.2% (<em>p</em> < 0.05) compared to previous methods' best performances. Ablation studies reveal that MDAgents effectively determines medical complexity to optimize for efficiency and accuracy across diverse medical tasks. Notably, the combination of moderator review and external medical knowledge in group collaboration resulted in an average accuracy improvement of 11.8%. Our code can be found at <a href="https://github.com/mitmedialab/MDAgents" target="_blank">https://github.com/mitmedialab/MDAgents</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Main Result</h2>
+          <p>
+            Our method outperforms Solo and Group settings across different medical benchmarks. MDAgents significantly outperforms (p < 0.05) both Solo and Group setting methods, showing best performance in 7 out of 10 medical benchmarks tested. This reveals the effectiveness of adaptive strategies integrated within our system, particularly when navigating through the text-only (e.g., DDXPlus where it outperformed the best performance of single-agent by 7.2% and multi-agent by 9.5%) and text-image datasets (e.g., Path-VQA, PMC-VQA and MIMIC-CXR). Our approach not only comprehends textual information with high precision but also adeptly synthesizes visual data, a pivotal capability in medical diagnostic evaluations.
+          </p>
+          <img src="./static/images/main_result.png" alt="Bias Figure AgentClinic">
+      
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="title is-3">Case Study</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              The design of MDAgents incorporates four stages: 1) Medical Complexity Check - The system evaluates the medical query, categorizing it as low, moderate, or high complexity based on clinical decision-making techniques. 2) Expert Recruitment - Based on complexity, the framework activates a single Primary Care Clinician (PCC) for low complexity issues, or a Multi-disciplinary Team (MDT) or Integrated Care Team (ICT) for moderate or high complexities. 3) Analysis and Synthesis - Solo queries use prompting techniques like Chain-of-Thought (CoT) and Self-Consistency (SC). MDTs involve multiple LLM agents forming a consensus, while ICTs synthesize information for the most complex cases. 4) Decision-making - The final stage synthesizes all inputs to provide a well-informed answer to the medical query.
+            </p>
+            <img src="./static/images/case_study.png" alt="Bias Figure AgentClinic">
+      
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{kim2024mdagentsadaptivecollaborationllms,
+      title={MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making}, 
+      author={Yubin Kim and Chanwoo Park and Hyewon Jeong and Yik Siu Chan and Xuhai Xu and Daniel McDuff and Hyeonhoon Lee and Marzyeh Ghassemi and Cynthia Breazeal and Hae Won Park},
+      year={2024},
+      eprint={2404.15155},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2404.15155}
+}</code></pre>
+    <pre><code>@misc{kim2024demonstrationadaptivecollaborationlarge,
+      title={A Demonstration of Adaptive Collaboration of Large Language Models for Medical Decision-Making}, 
+      author={Yubin Kim and Chanwoo Park and Hyewon Jeong and Cristina Grau-Vilchez and Yik Siu Chan and Xuhai Xu and Daniel McDuff and Hyeonhoon Lee and Marzyeh Ghassemi and Cynthia Breazeal and Hae Won Park},
+      year={2024},
+      eprint={2411.00248},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.00248}, 
+}</code></pre>
+  </div>
+</section>
+
+</body>
+</html>
