@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making">
-  <meta name="keywords" content="MDAgents, Medical Decision Making, Multi-LLM Collaboration">
+        content="Tiered Agentic Oversight: A Hierarchical Multi-Agent System for AI Safety in Healthcare">
+  <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making</title>
+  <title>Tiered Agentic Oversight: A Hierarchical Multi-Agent System for AI Safety in Healthcare</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -58,17 +58,15 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making</h1>
-          <div class="is-size-5 publication-authors">
+          <h1 class="title is-2 publication-title">Tiered Agentic Oversight: A Hierarchical Multi-Agent System for AI Safety in Healthcare</h1>
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://ybkim95.github.io/">Yubin Kim</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://chanwoo-park-official.github.io/">Chanwoo Park</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://sites.google.com/view/hyewon-jeong/">Hyewon Jeong</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://futuretech.mit.edu/team/yik-siu-chan">Yik Siu Chan</a><sup>1</sup>,
+              <a href="https://chanwoo-park-official.github.io/">Chanwoo Park</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="https://orsonxu.com/">Xuhai Xu</a><sup>1</sup>,
@@ -88,18 +86,18 @@
             <span class="author-block">
               <a href="https://www.media.mit.edu/people/haewon/overview/">Hae Won Park</a><sup>1</sup>,
             </span>
-          </div>
+          </div> -->
 
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Massachusetts Institute of Technology</span>
             <span class="author-block"><sup>2</sup>Google Research</span>
             <span class="author-block"><sup>3</sup>Seoul National University Hospital</span>
-          </div>
+          </div> -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/mitmedialab/MDAgents/blob/main/pdf/paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -107,8 +105,8 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
-              <span class="link-block">
+              </span> -->
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2404.15155"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -116,9 +114,9 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <span class="link-block">
-                <a href="https://github.com/mitmedialab/MDAgents"
+                <a href="https://github.com/tiered-agentic-oversight/tao"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -126,7 +124,7 @@
                   <span>Code</span>
                   </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="demo.html"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -134,12 +132,12 @@
                   </span>
                   <span>Demo</span>
                 </a>
-            </span>
+            </span> -->
             </div>
             <div class="is-size-5 publication-news">
               <br>
               <p>
-                🎉 <strong>News:</strong> Our paper has been accepted as an <strong>oral paper</strong> at NeurIPS 2024!
+                <strong>May 15, 2025:</strong> The paper and the code will be updated after the paper gets accepted.
               </p>
             </div>
           </div>
@@ -155,9 +153,9 @@
       <!--video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/mainfigure.png" type="picture">
       </video-->
-      <img src="./static/images/mdagents_animation.gif" width="100%" alt="Main Figure AgentClinic">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">MDAgents</span> is a framework that adapts the collaboration of LLMs for complex medical decision-making, improving performance on major medical benchmarks.
+      <img src="./static/images/teaser.png" width="100%" alt="Main Figure AgentClinic">
+      <h2 class="subtitle has-text-left">
+        <strong>Overview.</strong> We introduce a Tiered Agentic Oversight (TAO) framework designed to enhance the AI safety in healthcare. (top): Inputs derived from safety benchmarks are processed by a Recruiter Agent to source medical agents with different expertise. An Agent Router, instructed to assess potential risks based on the prompt and agent capabilities, determines the appropriate tier for each medical agent. Simpler cases are handled by lower tiers (Tier 1), while complex or potentially unsafe cases trigger Case Escalation to higher tiers (Tiers 2 and 3) involving more scrutiny, potentially incorporating human oversight as explored in our comparative study design (bottom left). We conducted comprehensive experiments across five healthcare-focused safety benchmarks. The radar plot (bottom right) demonstrates that TAO outperforms best multi-agent (LLM-Debate) and a reasoning model (Gemini-2.5 Pro) with CoT performance in 4 out of 5 benchmarks.
       </h2>
     </div>
   </div>
@@ -171,12 +169,46 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Foundation models are becoming valuable tools in medicine. Yet despite their promise, the best way to leverage Large Language Models (LLMs) in complex medical tasks remains an open question. We introduce a novel multi-actor framework, named <span style="font-weight: bold;">MDAgents</span> that helps to address this gap by automatically assigning a collaboration structure to a team of LLMs. The assigned solo or group collaboration structure is tailored to the medical task at hand, a simple emulation inspired by the way real-world medical decision-making processes are adapted to tasks of different complexities. We evaluate our framework and baseline methods using state-of-the-art LLMs across a suite of real-world medical knowledge and clinical diagnosis benchmarks. MDAgents achieved the best performance in <strong>seven out of ten</strong> benchmarks on tasks requiring an understanding of medical knowledge and multi-modal reasoning, showing a significant improvement of up to 4.2% (<em>p</em> < 0.05) compared to previous methods' best performances. Ablation studies reveal that MDAgents effectively determines medical complexity to optimize for efficiency and accuracy across diverse medical tasks. Notably, the combination of moderator review and external medical knowledge in group collaboration resulted in an average accuracy improvement of 11.8%. Our code can be found at <a href="https://github.com/mitmedialab/MDAgents" target="_blank">https://github.com/mitmedialab/MDAgents</a>.
+            Agentic systems offer transformative potential for healthcare, but it is imperative that patient-safety is prioritized.  Although advanced large language models (LLMs) are powerful tools, singular LLMs pose safety risks in complex healthcare scenarios due to limited error detection and single point of failure. This paper introduces \textbf{Tiered Agentic Oversight (TAO)}, a hierarchical multi-agent framework that enhances AI safety through layered, automated supervision. Inspired by clinical hierarchies (e.g., nurse, physician, specialist), TAO conducts agent routing based on task complexity and agent roles. Leveraging automated inter- and intra- tier collaboration and role-playing, TAO creates a robust safety framework. Comprehensive experiments, including ablation studies of agent attribution, human intervention requests, tier configurations, agent capability ordering, and adversarial robustness, demonstrate TAO's superior performance in 4 out of 5 healthcare safety benchmarks compared to single-agent and multi-agent frameworks. Finally, we validate TAO via an auxillary clinician-in-the-loop study that highlights how agentic oversight can complement human expertise.
           </p>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<br>
+
+<section class="hero teaser">
+  <!--
+    WARNING: <center> tag is DEPRECATED and should NOT be used in modern HTML5.
+    CSS is the correct way to center elements.
+    Bulma's .container class typically already uses CSS (margin: 0 auto;) for centering.
+  -->
+  <center>
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/table.png" width="90%" alt="Main Figure AgentClinic">
+      </div>
+    </div>
+  </center>
+  <!-- End of deprecated <center> tag usage -->
+</section>
+
+<section class="hero teaser">
+  <!--
+    WARNING: <center> tag is DEPRECATED and should NOT be used in modern HTML5.
+    CSS is the correct way to center elements.
+    Bulma's .container class typically already uses CSS (margin: 0 auto;) for centering.
+  -->
+  <center>
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/main_result1.png" width="90%" alt="Main Figure AgentClinic">
+      </div>
+    </div>
+  </center>
+  <!-- End of deprecated <center> tag usage -->
 </section>
 
 
@@ -188,10 +220,10 @@
         <div class="content">
           <h2 class="title is-3">Main Result</h2>
           <p>
-            Our method outperforms Solo and Group settings across different medical benchmarks. MDAgents significantly outperforms (p < 0.05) both Solo and Group setting methods, showing best performance in 7 out of 10 medical benchmarks tested. This reveals the effectiveness of adaptive strategies integrated within our system, particularly when navigating through the text-only (e.g., DDXPlus where it outperformed the best performance of single-agent by 7.2% and multi-agent by 9.5%) and text-image datasets (e.g., Path-VQA, PMC-VQA and MIMIC-CXR). Our approach not only comprehends textual information with high precision but also adeptly synthesizes visual data, a pivotal capability in medical diagnostic evaluations.
+            First, we present a comparative overview of the accuracy achieved by TAO and baseline methods across the five safety benchmarks. Across four out of five of these evaluations TAO demonstrates  superior performance. Notably, TAO consistently outperforms both single advanced LLMs and conventional multi-agent oversight frameworks. These performance improvements across diverse safety dimensions underscores the effectiveness of TAO's hierarchical agentic architecture in enhancing AI safety within critical healthcare applications.
+            
+            <br><br>The radar plot in the main figure directly compares TAO to baseline multi-agent approaches and CoT with single LLMs. The expanded area covered by TAO relative to these baselines visually reinforces its enhanced safety performance across the benchmark suite. This superior performance suggests that TAO's architectural advantage; specifically, its tiered structure, dynamic routing, and context-aware escalation strategies are key enablers of improved safety in complex, healthcare-related AI tasks.  Consistent performance across various safety benchmarks, provides compelling evidence for the holistic safety enhancements offered by the TAO framework. 
           </p>
-          <img src="./static/images/main_result.png" alt="Bias Figure AgentClinic">
-      
         </div>
       </div>
       <div class="column">
@@ -199,9 +231,17 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              The design of MDAgents incorporates four stages: 1) Medical Complexity Check - The system evaluates the medical query, categorizing it as low, moderate, or high complexity based on clinical decision-making techniques. 2) Expert Recruitment - Based on complexity, the framework activates a single Primary Care Clinician (PCC) for low complexity issues, or a Multi-disciplinary Team (MDT) or Integrated Care Team (ICT) for moderate or high complexities. 3) Analysis and Synthesis - Solo queries use prompting techniques like Chain-of-Thought (CoT) and Self-Consistency (SC). MDTs involve multiple LLM agents forming a consensus, while ICTs synthesize information for the most complex cases. 4) Decision-making - The final stage synthesizes all inputs to provide a well-informed answer to the medical query.
+              The user study involved 6 medical doctors who completed evaluations for all 20 medical triage scenarios and were thus included as qualified participants in this analysis. The evaluation focused on three dimensions: Oversight Necessity, Safety Confidence, and Output Appropriateness. To assess the consistency of expert judgments, we calculated inter-rater reliability (IRR) using the Intraclass Correlation Coefficient (ICC), specifically ICC(3,k) for absolute agreement of the average ratings from our k=6 experts.
+              
+              The ICC(3,k) values, which reflect the reliability of the average expert judgment for each dimension, were as follows:<br>
+
+              <strong>1) Oversight Necessity:</strong> ICC(3,k) = 0.6100<br>
+              <strong>2) Output Appropriateness:</strong> ICC(3,k) = 0.2592<br>
+              <strong>3) Safety Confidence:</strong> ICC(3,k) = -0.1009<br>
+
+
             </p>
-            <img src="./static/images/case_study.png" alt="Bias Figure AgentClinic">
+            <img src="./static/images/icc.png" alt="Bias Figure AgentClinic">
       
           </div>
 
@@ -210,7 +250,7 @@
     </div>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@misc{kim2024mdagentsadaptivecollaborationllms,
@@ -232,7 +272,7 @@
       url={https://arxiv.org/abs/2411.00248}, 
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 </body>
 </html>
